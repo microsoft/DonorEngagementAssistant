@@ -1,33 +1,45 @@
-# Project
+# Donor Engagement Assistant
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+Donor Engagement Assistant is a customized experience for the Microsoft Dynamics 365 Fundraising and Engagement platform to allow users of the system to create targeted email communications to donors. Based on their needs, users will interact with the Microsoft Azure OpenAI Service to create a personal letter and send it to a donor.
 
-As the maintainer of this project, please make a few updates:
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
 
-## Contributing
+## Prerequisites
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+- Dynamics 365 Sales Enterprise
+- Microsoft Cloud for Nonprofit – Fundraising and Engagement https://learn.microsoft.com/en-us/dynamics365/industry/nonprofit/fundraising-engagement-deploy-installer
+- Admin access to Microsoft Power Platform, Microsoft Dynamics 365 or tenant admin
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Trademarks
+## Environment Variables
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+- AI Letter Generator URL – the URL of the Canvas App in the deployed environment
+- Azure OpenAI Host URL – the endpoint of your Azure OpenAI instance
+- Azure OpenAI Host URL – the partial URL of a deployed model, e.g. “openai/deployments/gpt-turbo/”
+
+
+
+## Manual Solution Installation
+
+1. Navigate to the Power Apps Portal
+2. Click on Solutions in the left-hand navigation
+3. Click on Import Solution in the top navigation bar
+4. Click on browse and locate the unmanaged solution zip file on your computer
+5. Follow the remaining prompts to import the solution
+	
+
+
+## Developer Notes
+
+- Find instructions on how to deploy Azure OpenAI [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal).
+
+
+## FAQ
+### Should the assistant use GPT -3.5 or GPT-4?
+The app was tested with GPT-3.5 
+
+### Can the assistant use Azure Open AI?
+The app functions with both OpenAI or Azure Open AI. The repo currently uses Azure OpenAI. 
+[Request access to Azure OpenAI.](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUOFA5Qk1UWDRBMjg0WFhPMkIzTzhKQ1dWNyQlQCN0PWcu)
+
