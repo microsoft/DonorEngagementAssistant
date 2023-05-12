@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+</head>
+
+<body>
+    <iframe id="canvasIframe" width="350" height="768">
+    </iframe>
+    <script>
+        const encodedParams = window.location.href.split("?data=")[1];
+        const decodedParams = decodeURIComponent(encodedParams);
+
+        document.getElementById("canvasIframe").setAttribute("src", decodedParams);
+    </script>
+</body>
+
+</html>

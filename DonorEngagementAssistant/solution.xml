@@ -1,0 +1,1402 @@
+<ImportExportXml version="9.2.23033.220" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>DonorEngagementAssistant</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Donor Engagement Assistant" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>TSI</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="TSI" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>rsm</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>86680</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="campaign" behavior="2" />
+      <RootComponent type="1" schemaName="contact" behavior="2" />
+      <RootComponent type="1" schemaName="cr3df_dropdowntable" behavior="0" />
+      <RootComponent type="1" schemaName="msnfp_designation" behavior="2" />
+      <RootComponent type="1" schemaName="msnfp_transaction" behavior="2" />
+      <RootComponent type="1" schemaName="opportunity" behavior="2" />
+      <RootComponent type="1" schemaName="rsm_responsetracking" behavior="0" />
+      <RootComponent type="61" schemaName="rsm_container_canvas_app.html" behavior="0" />
+      <RootComponent type="61" schemaName="rsm_icon-openai" behavior="0" />
+      <RootComponent type="61" schemaName="rsm_ribbon_opportunity.js" behavior="0" />
+      <RootComponent type="300" schemaName="rsm_testsidepanecopy_9d3de" behavior="0" />
+      <RootComponent type="372" id="{be45df4f-1285-414b-af8d-e412f14a2a93}" schemaName="rsm_5Fazure-20openai-20-2D-201" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="1" schemaName="campaign" displayName="Campaign" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_addresschange" displayName="Address Change" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_appeal" displayName="Appeal" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_appeal" displayName="Appeal" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_designation" displayName="Designation" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="1" schemaName="msnfp_designation" displayName="Designation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_designation" displayName="Designation" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="300" schemaName="rsm_testsidepanecopy_9d3de" displayName="OpenAI Letter Generator" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_donorcommitment" displayName="Donor Commitment" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_package" displayName="Package" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_participation" displayName="Participation" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_paymentschedule" displayName="Payment Schedule" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_preference" displayName="Preference" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_qualification" displayName="Qualification" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msnfp_transaction" displayName="Transaction" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="1" schemaName="msnfp_transaction" displayName="Transaction" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="1" schemaName="opportunity" displayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunityproduct" displayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_campaign_defaultDesignation" displayName="msnfp_campaign_defaultDesignation" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_account_contact_Household" displayName="msnfp_account_contact_Household" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_GivingLevelInstance_Contact" displayName="msnfp_GivingLevelInstance_Contact" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_Membership_msnfp_Contact" displayName="msnfp_Membership_msnfp_Contact" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_transaction_contact" displayName="msnfp_transaction_contact" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_campaign_msnfp_appeal" displayName="msnfp_campaign_msnfp_appeal" parentSchemaName="msnfp_appeal" parentDisplayName="Appeal" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_campaign_msnfp_appeal" displayName="msnfp_campaign_msnfp_appeal" parentSchemaName="msnfp_appeal" parentDisplayName="Appeal" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_designationPlan_opportunity" displayName="msnfp_designationPlan_opportunity" parentSchemaName="msnfp_designationplan" parentDisplayName="Designation Plan" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_campaign_msnfp_donationimport_OriginatingCampaignId" displayName="msnfp_campaign_msnfp_donationimport_OriginatingCampaignId" parentSchemaName="msnfp_donationimport" parentDisplayName="Donation Import" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_commitment_campaign" displayName="msnfp_commitment_campaign" parentSchemaName="msnfp_donorcommitment" parentDisplayName="Donor Commitment" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_msnfp_donorcommitment" displayName="msnfp_contact_msnfp_donorcommitment" parentSchemaName="msnfp_donorcommitment" parentDisplayName="Donor Commitment" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_opportunity_msnfp_donorcommitment" displayName="msnfp_opportunity_msnfp_donorcommitment" parentSchemaName="msnfp_donorcommitment" parentDisplayName="Donor Commitment" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_campaign_msnfp_event" displayName="msnfp_campaign_msnfp_event" parentSchemaName="msnfp_event" parentDisplayName="Event" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_campaign_msnfp_eventpackage" displayName="msnfp_campaign_msnfp_eventpackage" parentSchemaName="msnfp_eventpackage" parentDisplayName="Registration Package" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contactdonor_msnfp_eventpackage" displayName="msnfp_contactdonor_msnfp_eventpackage" parentSchemaName="msnfp_eventpackage" parentDisplayName="Registration Package" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_msnfp_giftaiddeclaration" displayName="msnfp_contact_msnfp_giftaiddeclaration" parentSchemaName="msnfp_giftaiddeclaration" parentDisplayName="Gift Aid Declaration" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_campaign_msnfp_giftbatch" displayName="msnfp_campaign_msnfp_giftbatch" parentSchemaName="msnfp_giftbatch" parentDisplayName="Gift Batch" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contactdonor_msnfp_givinglevelinstance" displayName="msnfp_contactdonor_msnfp_givinglevelinstance" parentSchemaName="msnfp_givinglevelinstance" parentDisplayName="Giving Level Instance" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_msnfp_membership_Customer" displayName="msnfp_contact_msnfp_membership_Customer" parentSchemaName="msnfp_membership" parentDisplayName="Membership" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_opportunity_msnfp_opportunitypreference_OpportunityId" displayName="msnfp_opportunity_msnfp_opportunitypreference_OpportunityId" parentSchemaName="msnfp_opportunitypreference" parentDisplayName="Opportunity Preference" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_opportunity_msnfp_opportunitystage_OpportunityId" displayName="msnfp_opportunity_msnfp_opportunitystage_OpportunityId" parentSchemaName="msnfp_opportunitystage" parentDisplayName="Opportunity Stage" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_appeal_msnfp_package_AppealId" displayName="msnfp_appeal_msnfp_package_AppealId" parentSchemaName="msnfp_package" parentDisplayName="Package" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_campaign_msnfp_package_CampaignId" displayName="msnfp_campaign_msnfp_package_CampaignId" parentSchemaName="msnfp_package" parentDisplayName="Package" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_msnfp_participation_contactId" displayName="msnfp_contact_msnfp_participation_contactId" parentSchemaName="msnfp_participation" parentDisplayName="Participation" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_campaign_msnfp_paymentschedule_OriginatingCampaignId" displayName="msnfp_campaign_msnfp_paymentschedule_OriginatingCampaignId" parentSchemaName="msnfp_paymentschedule" parentDisplayName="Payment Schedule" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contactdonor_msnfp_paymentschedule" displayName="msnfp_contactdonor_msnfp_paymentschedule" parentSchemaName="msnfp_paymentschedule" parentDisplayName="Payment Schedule" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contactfrom_msnfp_pledgematch" displayName="msnfp_contactfrom_msnfp_pledgematch" parentSchemaName="msnfp_pledgematch" parentDisplayName="Pledge Match" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contactto_msnfp_pledgematch" displayName="msnfp_contactto_msnfp_pledgematch" parentSchemaName="msnfp_pledgematch" parentDisplayName="Pledge Match" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_msnfp_preference_preference_customer" displayName="msnfp_contact_msnfp_preference_preference_customer" parentSchemaName="msnfp_preference" parentDisplayName="Preference" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_msnfp_qualification_contactId" displayName="msnfp_contact_msnfp_qualification_contactId" parentSchemaName="msnfp_qualification" parentDisplayName="Qualification" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contactdonor_msnfp_receipt" displayName="msnfp_contactdonor_msnfp_receipt" parentSchemaName="msnfp_receipt" parentDisplayName="Receipt" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_msnfp_refund_Customer" displayName="msnfp_contact_msnfp_refund_Customer" parentSchemaName="msnfp_refund" parentDisplayName="Refund" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_opportunity_msnfp_report_OpportunityId" displayName="msnfp_opportunity_msnfp_report_OpportunityId" parentSchemaName="msnfp_report" parentDisplayName="Funding Report" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contactcustomer_msnfp_sponsorship" displayName="msnfp_contactcustomer_msnfp_sponsorship" parentSchemaName="msnfp_sponsorship" parentDisplayName="Sponsorship" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_msnfp_ticket_customer" displayName="msnfp_contact_msnfp_ticket_customer" parentSchemaName="msnfp_ticket" parentDisplayName="Ticket" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_msnfp_transaction_RelatedConstituentId" displayName="msnfp_contact_msnfp_transaction_RelatedConstituentId" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contactdonor_msnfp_transaction" displayName="msnfp_contactdonor_msnfp_transaction" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_txn_originatingCampaign" displayName="msnfp_txn_originatingCampaign" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_appeal_opportunity_AppealId" displayName="msnfp_appeal_opportunity_AppealId" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_contact_opportunity_SolicitorId" displayName="msnfp_contact_opportunity_SolicitorId" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_event_opportunity_EventId" displayName="msnfp_event_opportunity_EventId" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_msnfp_package_opportunity_PackageId" displayName="msnfp_msnfp_package_opportunity_PackageId" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_objective_opportunity_ObjectiveId" displayName="msnfp_objective_opportunity_ObjectiveId" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_opportunity_defaultDesignation" displayName="msnfp_opportunity_defaultDesignation" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msnfp_systemuser_opportunity_OpportunityManagerId" displayName="msnfp_systemuser_opportunity_OpportunityManagerId" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="actualend" displayName="Actual End Date" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="actualstart" displayName="Actual Start Date" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="codename" displayName="Campaign Code" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdby" displayName="Created By" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="description" displayName="Description" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="expectedrevenue" displayName="Estimated Revenue" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_campaign_defaultdesignation" displayName="Default Designation" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_campaigncategory" displayName="Campaign Category" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_campaigntype" displayName="Campaign Type" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_count_donorcommitments" displayName="Pledges Collected" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_count_products" displayName="Products Sold" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_count_registrations" displayName="Registrations Sold" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_count_sponsorships" displayName="Sponsorships Sold" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_count_transactions" displayName="Donations Collected" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_sum_donorcommitments" displayName="$ Pledges" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_sum_products" displayName="$ Products" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_sum_registrations" displayName="$ Registrations" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_sum_sponsorships" displayName="$ Sponsorships" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_sum_total" displayName="$ Total Revenue" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_sum_transactions" displayName="$ Donations" parentSchemaName="campaign" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Name" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="proposedend" displayName="Proposed End Date" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="proposedstart" displayName="Proposed Start Date" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totalactualcost" displayName="Total Cost of Campaign" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_anonymity" displayName="Mark Donations as Anonymous?" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_constituentnumber" displayName="Constituent Number" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_deceased" displayName="Deceased?" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_facebookprofile" displayName="Facebook" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_formalsalutation" displayName="Formal Salutation" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_givinglevelid" displayName="Giving Level" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_householdid" displayName="Household" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_householdrelationship" displayName="Household Relationship" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_informalsalutation" displayName="Informal Salutation" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_instagramprofile" displayName="Instagram" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_lasttransactiondate" displayName="Last Transaction Date" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_lasttransactionid" displayName="Last Transaction" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_lifetimegivingsum" displayName="Lifetime Giving Sum" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_linkedin" displayName="LinkedIn" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_preferredlanguagecode" displayName="Preferred Language" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_primaryconstituenttype" displayName="Primary Constituent Type" parentSchemaName="contact" parentDisplayName="Contact" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_primarymembershipid" displayName="Primary Membership" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_receiptpreferencecode" displayName="Receipt Preference" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_solicitcode" displayName="Solicitation Status" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_solicitdate" displayName="Solicit Date" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_twitter" displayName="Twitter" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_vip" displayName="VIP" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_whatsappprofile" displayName="What's App" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_year0_giving" displayName="Current Year Giving" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_year1_giving" displayName="Last Year's Giving" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_year2_giving" displayName="Third Year Giving" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_year3_giving" displayName="Fourth Year Giving" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_year4_giving" displayName="Fifth Year Giving" parentSchemaName="contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_designationid" displayName="Primary Designation" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="59" schemaName="Soft Credit Amount by Primary Designation" displayName="Soft Credit Amount by Primary Designation" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" id="{68664097-f77d-ec11-8d21-000d3a4d8916}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="campaignid" displayName="Source Campaign" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_MarketingSales (9.0.4.29)">
+          <package>msdynce_MarketingSalesAnchor (9.0.23033.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="closeprobability" displayName="Probability" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdby" displayName="Created By" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Potential Donor" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="description" displayName="Description" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="discountamount" displayName="Opportunity Discount Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="discountpercentage" displayName="Opportunity Discount (%)" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedclosedate" displayName="Est. close date" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedvalue" displayName="Est. revenue" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="freightamount" displayName="Freight Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="isrevenuesystemcalculated" displayName="Revenue" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_amountrealized" displayName="Realized" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_appealid" displayName="Appeal" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_eventid" displayName="Event" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_expectedamount" displayName="Expected Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_firstreport" displayName="First Report" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_lastreport" displayName="Last Report" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_numberofreports" displayName="No. Reports" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_objectiveid" displayName="Primary Objective" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_opportunity_defaultdesignationid" displayName="Default Designation" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_opportunitymanagerid" displayName="Opportunity Manager" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_packageid" displayName="Package" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_pledgecreated" displayName="Pledge Created" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_pledgecreateddate" displayName="Pledge Created Date" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_primaryformid" displayName="Primary Form Id" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_setcommitted" displayName="Set Committed" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_setcommitteddate" displayName="Set Committed Date" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_solicitationtype" displayName="Solicitation Type" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_solicitorid" displayName="Solicitor" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msnfp_sum_transaction_amount" displayName="Allocated" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="10" schemaName="rsm_rsm_responsetracking_opportunity_lookup_o" displayName="rsm_rsm_responsetracking_opportunity_lookup_o" parentSchemaName="rsm_responsetracking" parentDisplayName="ResponseTracking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="10" schemaName="rsm_rsm_responsetracking_opportunity_lookup_o" displayName="rsm_rsm_responsetracking_opportunity_lookup_o" parentSchemaName="rsm_responsetracking" parentDisplayName="ResponseTracking" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Relationship Manager" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="pricelevelid" displayName="Price List" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="purchaseprocess" displayName="Decision Process" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totalamount" displayName="Total Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totalamountlessfreight" displayName="Total Pre-Freight Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totallineitemamount" displayName="Total Detail Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totaltax" displayName="Total Tax" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentbundleidref" displayName="Parent bundle product" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="msdynce_SalesPatch (9.0.1904.3002)">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunity Product Inline Edit View" displayName="Opportunity Product Inline Edit View" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)" id="{01010de7-749e-4fe6-8037-aca560a4fcbe}">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Donor Commitments" displayName="Active Donor Commitments" parentSchemaName="msnfp_donorcommitment" parentDisplayName="Donor Commitment" solution="NonprofitCore (3.0.3.5)" id="{01527c1d-34a8-4777-9bf0-ae59178b8b1e}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Designation Lookup View" displayName="Designation Lookup View" parentSchemaName="msnfp_designation" parentDisplayName="Designation" solution="NonprofitCore (3.0.3.5)" id="{0d69fade-f4fb-4c97-8d59-08e9839563d0}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Designation Lookup View" displayName="Designation Lookup View" parentSchemaName="msnfp_designation" parentDisplayName="Designation" solution="NonprofitCore (3.0.3.5)" id="{0d69fade-f4fb-4c97-8d59-08e9839563d0}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Campaign Lookup View" displayName="Campaign Lookup View" parentSchemaName="campaign" parentDisplayName="Campaign" solution="msdynce_Marketing (9.0.4.37)" id="{0e76dc73-2052-484e-8c00-a760f8d522ec}">
+          <package>msdynce_MarketingAnchor (9.0.23033.10003)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Package Lookup View" displayName="Package Lookup View" parentSchemaName="msnfp_package" parentDisplayName="Package" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{1884565f-16e1-4806-a42c-71fbd3aef083}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Appeal Lookup View" displayName="Appeal Lookup View" parentSchemaName="msnfp_appeal" parentDisplayName="Appeal" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{1d815714-25e2-47ae-bed4-fe23d50b864e}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Transaction Lookup View" displayName="Transaction Lookup View" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="NonprofitCore (3.0.3.5)" id="{2385d69e-8bf4-4451-8235-5f7484886883}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Transactions" displayName="Active Transactions" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="NonprofitCore (3.0.3.5)" id="{246c4b32-25d7-4110-bd29-4dee809a78f8}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Household Lookup" displayName="Household Lookup" parentSchemaName="account" parentDisplayName="Account" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{399d82d4-4dd7-ea11-a813-000d3a0c94a6}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Preferences" displayName="Active Preferences" parentSchemaName="msnfp_preference" parentDisplayName="Preference" solution="NonprofitCore (3.0.3.5)" id="{39e7e428-fc67-480f-811f-b3141dbdd676}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Appeals" displayName="Active Appeals" parentSchemaName="msnfp_appeal" parentDisplayName="Appeal" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{40b395ef-d25c-4c9d-9654-c8fa96f0a204}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Payment Schedules" displayName="Active Payment Schedules" parentSchemaName="msnfp_paymentschedule" parentDisplayName="Payment Schedule" solution="NonprofitCore (3.0.3.5)" id="{4ed6a86f-47a6-4abf-88f1-5f12b8b13295}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Participations" displayName="Active Participations" parentSchemaName="msnfp_participation" parentDisplayName="Participation" solution="NonprofitCore (3.0.3.5)" id="{7744017d-f4e6-4042-8671-f3eba4a8f41f}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Objective Lookup View" displayName="Objective Lookup View" parentSchemaName="msnfp_objective" parentDisplayName="Objective" solution="NonprofitCore (3.0.3.5)" id="{8f0ffac5-a0ea-46d8-a4a2-3f27460cffae}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Membership Lookup View" displayName="Membership Lookup View" parentSchemaName="msnfp_membership" parentDisplayName="Membership" solution="NonprofitCore (3.0.3.5)" id="{99a8f36e-17e3-424b-ab56-76d2b67173b7}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Event Lookup View" displayName="Event Lookup View" parentSchemaName="msnfp_event" parentDisplayName="Event" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{9e4f22c1-3a5a-4c21-8a1d-e85c0fefe800}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Packages" displayName="Active Packages" parentSchemaName="msnfp_package" parentDisplayName="Package" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{a6d884f3-0d1d-4ed4-b299-8f7602080a89}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Qualifications" displayName="Active Qualifications" parentSchemaName="msnfp_qualification" parentDisplayName="Qualification" solution="NonprofitCore (3.0.3.5)" id="{bc565779-3219-4b48-9562-6c30e721cf0c}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunity Product Inline Edit View: Bundle Products" displayName="Opportunity Product Inline Edit View: Bundle Products" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="msdynce_SalesPatch (9.0.1904.3002)" id="{e175dfbf-8eae-4af2-9dd2-68c43c14d40f}">
+          <package>msdynce_SalesAnchor (9.0.23033.10009)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Address Changes" displayName="All Address Changes" parentSchemaName="msnfp_addresschange" parentDisplayName="Address Change" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{ef88580d-cf34-46a3-a880-881bbddd063a}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Open Address Changes" displayName="My Open Address Changes" parentSchemaName="msnfp_addresschange" parentDisplayName="Address Change" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{fdc35c07-cb9c-4d26-8086-b5deec96016c}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Commitment Type by Commitment Date" displayName="Commitment Type by Commitment Date" parentSchemaName="msnfp_donorcommitment" parentDisplayName="Donor Commitment" solution="NonprofitCore (3.0.3.5)" id="{20d64ddf-58d1-e811-a960-000d3a37870e}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Gifts by Primary Designation" displayName="Gifts by Primary Designation" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{87a1440d-e2e5-ea11-a813-000d3a5cec97}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Account or Contact by Engagement Interest Type" displayName="Account or Contact by Engagement Interest Type" parentSchemaName="msnfp_preference" parentDisplayName="Preference" solution="NonprofitCore (3.0.3.5)" id="{adcb9d2a-b1eb-ea11-a817-000d3a300a85}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Transactions Secured (No. of Transactions )" displayName="Transactions Secured (No. of Transactions )" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{b64acad2-c8a5-ea11-a812-000d3af3b5be}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Contact by Participation Type" displayName="Contact by Participation Type" parentSchemaName="msnfp_participation" parentDisplayName="Participation" solution="NonprofitCore (3.0.3.5)" id="{dbe1c697-b0eb-ea11-a817-000d3a300a85}">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Amount by Payment Type" displayName="Amount by Payment Type" parentSchemaName="msnfp_transaction" parentDisplayName="Transaction" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{f817f516-c4e7-ea11-a817-000d3a303484}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Fundraising: Designation" parentDisplayName="Designation" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{1e599521-0425-4911-a594-319a15717589}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Designation" parentDisplayName="Designation" id="{1e599521-0425-4911-a594-319a15717589}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{67cc8726-db9b-445e-88ee-171fe5388f87}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" solution="FundraisingandEngagement (2.0.1634037448.1)" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Campaign" id="{e0cae4d6-3701-4623-815d-1ef6a8adf710}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_talkingpointsloader.js" displayName="msdyn_talkingpointsloader.js" solution="msdynce_Talkingpoints (9.0.1.701894)">
+          <package>msdynce_SalesInsightsAnchor (9.0.23033.10017)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/scripts/autopopulatedfieldsforgifts.js" displayName="msnfp_/scripts/autopopulatedfieldsforgifts.js" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/scripts/common.js" displayName="msnfp_/scripts/common.js" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/scripts/common.js" displayName="msnfp_/scripts/common.js" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/scripts/contactform.js" displayName="msnfp_/scripts/contactform.js" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/scripts/jquery.js" displayName="msnfp_/scripts/jquery.js" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/scripts/jquery.js" displayName="msnfp_/scripts/jquery.js" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/scripts/opportunityredirecttoform.js" displayName="msnfp_/scripts/opportunityredirecttoform.js" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/webpages/customersnapshot.html" displayName="msnfp_/webpages/customersnapshot.html" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Contact" parentDisplayName="Contact" id="{67cc8726-db9b-445e-88ee-171fe5388f87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/webpages/opportunitydesignationplan.html" displayName="msnfp_/webpages/opportunitydesignationplan.html" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/webpages/opportunityexistingpreferences.html" displayName="msnfp_/webpages/opportunityexistingpreferences.html" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/webpages/opportunitypreferences.html" displayName="msnfp_/webpages/opportunitypreferences.html" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/webpages/opportunityreportingplan.html" displayName="msnfp_/webpages/opportunityreportingplan.html" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_/webpages/opportunitystages.html" displayName="msnfp_/webpages/opportunitystages.html" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_transactions16" displayName="msnfp_transactions16" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="1" schemaName="msnfp_transaction" displayName="Transaction" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_transactions32" displayName="msnfp_transactions32" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="1" schemaName="msnfp_transaction" displayName="Transaction" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msnfp_transactionssvg" displayName="msnfp_transactionssvg" solution="NonprofitCore (3.0.3.5)">
+          <package>NonprofitCoreAnchor (3.0.3.5)</package>
+        </Required>
+        <Dependent type="1" schemaName="msnfp_transaction" displayName="Transaction" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2303.3019)" />
+        <Dependent type="60" displayName="Fundraising: Information" parentDisplayName="Opportunity" id="{21708dfd-cee1-4f94-8398-5c48ed0abce9}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="80" schemaName="msnfp_FundraisingandEngagement" displayName="Fundraising and Engagement" solution="FundraisingandEngagement (2.0.1634037448.1)">
+          <package>FundraisingandEngagementAnchor (2.0.3.1)</package>
+        </Required>
+        <Dependent type="appaction" displayName="rsm__Letter!48eeda5b7cd64ccc8b8cd779561cf704!msnfp_FundraisingandEngagement!opportunity!0" id.uniquename="rsm__Letter!48eeda5b7cd64ccc8b8cd779561cf704!msnfp_FundraisingandEngagement!opportunity!0" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

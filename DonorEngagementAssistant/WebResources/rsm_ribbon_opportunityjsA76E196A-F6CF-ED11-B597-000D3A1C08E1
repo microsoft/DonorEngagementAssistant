@@ -1,0 +1,66 @@
+console.log("loaded `ribbon_opportunity.js`");
+
+if (typeof TSI_Demo === "undefined")
+    TSI_Demo = { __namespace: true };
+
+TSI_Demo.ribbon = (function () {
+    async function getCanvasAppUrl() {
+        let url = "";
+
+        const fetchXML = `?fetchXml=<fetch>
+        <entity name='environmentvariabledefinition'>
+        <filter>
+        <condition attribute='schemaname' operator='eq' value='rsm_AILetterGeneratorURL' />
+        </filter>
+        <link-entity name='environmentvariablevalue' from='environmentvariabledefinitionid' to='environmentvariabledefinitionid'>
+        <attribute name='value' alias='url' />
+        </link-entity>
+        </entity>
+        </fetch>`;
+
+        url = await Xrm.WebApi.retrieveMultipleRecords("environmentvariabledefinition", fetchXML)
+            .then(
+                result => result.entities[0].url,
+                error => console.log(error)
+            )
+            .catch(error => console.log(error));
+
+        return url;
+    }
+
+    async function getUrlWithParams(formContext) {
+        const result = [];
+        const opportunityid = formContext.data.entity.getId().replace(/(\{|\})/g, "");
+        const donorid = formContext.getAttribute("customerid").getValue()[0].id.replace(/(\{|\})/g, "");
+
+        console.log(`opening canvas app in side pane for ${opportunityid} with donor ${donorid}`);
+
+        result.push(`${await getCanvasAppUrl()}`)
+        result.push(`opportunityid=${opportunityid}`);
+        result.push(`donorid=${donorid}`);
+
+        return result.join("&");
+    }
+
+    async function openSidePaneCanvas(formContext) {
+        const urlWithParameters = await getUrlWithParams(formContext);
+
+        Xrm.App.sidePanes.createPane({
+            title: "OpenAI Letter",
+            paneId: "canvasApp",
+            // hideHeader: true,
+            canClose: true,
+            width: 370
+        })
+            .then(pane => pane.navigate({
+                pageType: "webresource",
+                webresourceName: "rsm_container_canvas_app.html",
+                data: urlWithParameters
+            }));
+    }
+
+    return {
+        openSidePaneCanvas
+    }
+
+})();

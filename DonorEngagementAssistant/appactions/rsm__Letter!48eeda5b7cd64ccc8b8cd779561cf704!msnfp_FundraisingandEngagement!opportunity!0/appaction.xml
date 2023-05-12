@@ -1,0 +1,36 @@
+<appaction uniquename="rsm__Letter!48eeda5b7cd64ccc8b8cd779561cf704!msnfp_FundraisingandEngagement!opportunity!0">
+  <appmoduleid>
+    <uniquename>msnfp_FundraisingandEngagement</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="OpenAI Letter">
+    <label description="OpenAI Letter" languagecode="1033" />
+  </buttonlabeltext>
+  <buttonsequencepriority>1000513.5000000000</buttonsequencepriority>
+  <buttontooltiptitle default="AI Assistant">
+    <label description="AI Assistant" languagecode="1033" />
+  </buttontooltiptitle>
+  <context>1</context>
+  <contextentity>
+    <logicalname>opportunity</logicalname>
+  </contextentity>
+  <contextvalue>opportunity</contextvalue>
+  <fonticon>$clientsvg:Mail</fonticon>
+  <hidden>0</hidden>
+  <iconwebresourceid>
+    <webresourceid>83bee7f9-91df-ed11-a7c7-000d3a1f7681</webresourceid>
+  </iconwebresourceid>
+  <iscustomizable>1</iscustomizable>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>Letter!48eeda5b7cd64ccc8b8cd779561cf704</name>
+  <onclickeventjavascriptfunctionname>TSI_Demo.ribbon.openSidePaneCanvas</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>a76e196a-f6cf-ed11-b597-000d3a1c08e1</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilitytype>0</visibilitytype>
+</appaction>

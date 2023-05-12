@@ -1,0 +1,10 @@
+<environmentvariabledefinition schemaname="rsm_AILetterGeneratorURL">
+  <displayname default="AI Letter Generator URL">
+    <label description="AI Letter Generator URL" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.4</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>
