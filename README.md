@@ -16,7 +16,7 @@ Donor Engagement Assistant is a customized experience for the Microsoft Dynamics
 
 - AI Letter Generator URL: the URL of the Canvas App in the deployed environment (You can leave this blank. It will be filled in later)
 - Azure OpenAI Base URL: the partial URL of a deployed model, e.g. “openai/deployments/**gpt-turbo**” (**remove all trailing slashes**), where "gpt-turbo" is the name of your Azure OpenAI deployment. 
-- Azure OpenAI Host URL: the endpoint of your Azure OpenAI instance, e.g. "myazureopenai.openai.azure.com" (**remove all trailing slashes**)
+- Azure OpenAI Host URL: the endpoint of your Azure OpenAI instance, e.g. "**myazureopenai**.openai.azure.com" (**remove all trailing slashes**), where "myazureopenai" is the name of your Azure OpenAI resource.
 
 ## Manual Solution Installation
 
@@ -25,8 +25,16 @@ Donor Engagement Assistant is a customized experience for the Microsoft Dynamics
 3. Click on Import Solution in the top navigation bar
 4. Click on browse and locate the unmanaged solution zip file on your computer
 5. Follow the remaining prompts to import the solution
-	
 
+## Setting AI Letter Generator URL
+
+1. Go to Power Apps Make Portal
+2. Click on "Solutions" on the left panel.
+3. Click on "Donor Engagement Assistant" from the list.
+4. Click on the "OpenAI Letter Generator" elipesis menu and click on "Details". Copy the "Web link" address.
+5. Click on the "AI Letter Generator URL" and paste the copied URL into the "Current Value" field.
+6. Click on the "OpenAI Letter Generator". The editor will open and prompt you for the OpenAI key.
+7. After setting the key, go back and save the changes.
 
 ## Developer Notes
 
