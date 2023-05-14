@@ -14,11 +14,9 @@ Donor Engagement Assistant is a customized experience for the Microsoft Dynamics
 
 ## Environment Variables
 
-- AI Letter Generator URL – the URL of the Canvas App in the deployed environment
-- Azure OpenAI Host URL – the endpoint of your Azure OpenAI instance
-- Azure OpenAI Host URL – the partial URL of a deployed model, e.g. “openai/deployments/gpt-turbo/”
-
-
+- AI Letter Generator URL: the URL of the Canvas App in the deployed environment (You can leave this blank. It will be filled in later)
+- Azure OpenAI Base URL: the partial URL of a deployed model, e.g. “openai/deployments/gpt-turbo” (**remove all slashes**)
+- Azure OpenAI Host URL: the endpoint of your Azure OpenAI instance, e.g. "mydeployment.openai.azure.com" (**remove all slashes**)
 
 ## Manual Solution Installation
 
