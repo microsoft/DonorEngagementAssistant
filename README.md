@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository is no longer being actively maintained and will be removed from GitHub on December 31, 2025.
+
 # Donor Engagement Assistant
 
 Donor Engagement Assistant is a customized experience for the Microsoft Dynamics 365 Fundraising and Engagement platform to allow users of the system to create targeted email communications to donors. Based on their needs, users will interact with the Microsoft Azure OpenAI Service to create a personal letter and send it to a donor.
